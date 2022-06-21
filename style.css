@@ -71,7 +71,7 @@ header .main__menu li {
 
 .service {
   position: relative;
-  height: 681px;
+  min-height: 781px;
 }
 .service .main__text {
   position: relative;
@@ -172,5 +172,182 @@ footer .name {
   -webkit-transform: scale(1.3, 1.3);
           transform: scale(1.3, 1.3);
   caret-color: #CB0098;
+  cursor: pointer;
+}
+
+.page__reg {
+  min-height: calc(100vh - 130px);
+  width: 70%;
+  margin: 0 auto;
+}
+.page__reg .regestration__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.page__reg .registration__content {
+  margin-right: 25px;
+  margin-top: 50px;
+  max-width: 50%;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.page__reg .registration__content h3 {
+  color: #CB0098;
+  font-weight: 600;
+  font-size: 23px;
+  margin-bottom: 30px;
+  -webkit-transition: all 1.3s ease-in-out;
+  transition: all 1.3s ease-in-out;
+}
+.page__reg .registration__content h5 {
+  color: #000;
+  opacity: 0.5;
+  margin-bottom: 30px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+.page__reg .registration__content p {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.registration__content h5:hover {
+  cursor: pointer;
+  color: #cb0058;
+}
+
+.page__reg h3:hover {
+  color: #000;
+  opacity: 0.5;
+}
+
+form {
+  background-color: #fff;
+  border: 2px solid #cb0058;
+  min-height: 500px;
+  width: 400px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+form .country {
+  margin-bottom: 50px;
+  font-weight: 600;
+  margin-left: 15px;
+}
+form .country p {
+  margin-bottom: 5px;
+}
+form .phone__number {
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+form .phone__number p {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+form .same__border {
+  border: 1px solid #CB0098;
+  border-radius: 5px;
+  padding-left: 5px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 13px;
+  min-height: 30px;
+  background-color: #f7f7f7;
+}
+form .name__firstname {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 15px;
+}
+form .gender {
+  padding: 5px;
+  margin: 15px;
+  height: 60px;
+  margin-top: 30px;
+}
+form .gender p {
+  margin-bottom: 5px;
+  text-align: center;
+  font-weight: 600;
+}
+form .gender .gender__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+form .gender .gender__border {
+  width: 50%;
+  border: 1px solid #CB0098;
+  border-radius: 30px;
+  padding-left: 5px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 13px;
+  min-height: 30px;
+  background-color: #fff;
+}
+form .gender .woman {
+  margin-left: 15px;
+  text-align: center;
+  padding: 10px;
+}
+form .gender .man {
+  text-align: center;
+  padding: 10px;
+}
+form h2 {
+  font-size: 23px;
+  font-weight: 700;
+  text-align: center;
+  color: #cb0058;
+  padding: 18px 0;
+}
+form .email {
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+form .email p {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+form .btn__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+form .btn__form {
+  display: inline-block;
+  border: 1px solid #e90482;
+  border-radius: 30px;
+  padding: 15px;
+  background-color: #f7f7f7;
+  margin-bottom: 15px;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+form .btn__form a {
+  color: #000;
+  font-weight: 600;
+}
+
+.btn__form:hover {
+  background-color: rgba(219, 165, 230, 0.8509803922);
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
   cursor: pointer;
 }
